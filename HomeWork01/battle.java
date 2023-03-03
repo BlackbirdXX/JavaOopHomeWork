@@ -29,9 +29,12 @@ public class battle {
         System.out.println();
         System.out.println(hero2.printInfo());
         wait(3000);
+        int count = 1;
 
         while (hero.hp > 0 & hero2.hp > 0) {
             System.out.print("\033[H\033[2J");
+            System.out.println(String.format("Раунд : %d \n", count));
+            count++;
             hero.GetDamageWiz(generateDamage(10, 15));
             hero.useMana();
             hero2.GetDamageWar(generateDamage(10, 15));
