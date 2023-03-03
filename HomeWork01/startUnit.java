@@ -14,7 +14,7 @@ public class startUnit {
 
    private String getName() {
     Random r = new Random();
-        int val = r.nextInt(7);
+        int val = r.nextInt(5, 9);
         switch (val) {
             case 0:
                 name = "Азатот";
@@ -40,7 +40,7 @@ public class startUnit {
             case 7:
                 name = "Шаб-Ниггурат";
                 break;
-            default:
+            case 8:
                 name = "Йог-Сотхотх";
                 break;
         }
